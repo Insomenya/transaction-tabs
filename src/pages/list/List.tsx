@@ -34,7 +34,7 @@ const List = () => {
     }, []);
     
     return (
-        <div>
+        <div className='container mx-auto pb-6'>
             <Tabs titles={typeDic}>
                 {data.map((tabData, index) => (
                     <Tab key={tabData.title} index={index}>
