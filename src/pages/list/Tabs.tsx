@@ -1,18 +1,10 @@
 import * as React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
+import { toTitleCase } from '../toTitleCase';
 
 interface tabsProps {
     titles: string[]
     children: React.ReactNode[] | null
-}
-
-const toTitleCase = (str: string) => {
-    return str.replace(
-        /\w\S*/g,
-        function (txt) {
-            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-        }
-    );
 }
 
 const Tabs = ({children, titles}: tabsProps) => {

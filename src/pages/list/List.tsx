@@ -2,7 +2,7 @@ import * as React from 'react'
 import './../../index.css'
 import Tabs from './Tabs';
 import Tab from './Tab';
-import listData from './listData';
+import listData from '../listData';
 import { dataRow, tabsData } from './types';
 import ListTable from './ListTable';
 
